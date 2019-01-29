@@ -285,6 +285,9 @@ class BackgroundExt {
      * Add required flags to the window to unlock/wakeup the device.
      */
     static void addWindowFlags(Activity app) {
+        return;
+
+        /*
         final Window window = app.getWindow();
 
         app.runOnUiThread(new Runnable() {
@@ -297,6 +300,7 @@ class BackgroundExt {
                 );
             }
         });
+        */
     }
 
     /**
